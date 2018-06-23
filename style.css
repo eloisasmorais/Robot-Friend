@@ -1,0 +1,113 @@
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.robot {}
+
+.head,
+.torso,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+    background-color: rgb(128, 0, 128);
+    margin: 0 auto;
+}
+
+.head {
+    width: 200px;
+    height: 150px;
+    border-radius: 200px 200px 12px 12px;
+    margin-bottom: 5px;
+    transition: all 2300ms;
+}
+
+.head:hover {
+    transform: skew(-25deg);
+}
+
+.eyes {
+    display: inline-block;
+}
+
+.left-eye,
+.right-eye {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.left-eye {
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+
+.right-eye {
+    position: relative;
+    top: 60px;
+    left: 130px;
+}
+
+.upper-body {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px 7px 50px 50px;
+    margin: 0 auto;
+}
+
+.left-arm,
+.right-arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 25px;
+}
+
+.left-arm {
+    margin-right: 2px;
+}
+
+.right-arm {
+    margin-left: 2px;
+    transition: transform 1s;
+}
+
+.right-arm:hover {
+    transform: translate(0px, -40px) rotate(-125deg);
+}
+
+.lower-body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.left-leg,
+.right-leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0px 0px 25px 25px;
+    display: inline-block;
+}
+
+.left-leg {
+    margin-left: 45px;
+    transition: transform 500ms;
+}
+
+.right-leg {
+    margin-left: 30px;
+}
+
+.left-leg:hover {
+    transform: rotate(25deg);
+}
